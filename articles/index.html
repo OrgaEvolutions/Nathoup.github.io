@@ -17,5 +17,5 @@ title: Nathoup's Blog 1901
 	  {% for post in site.pages %} {% if post.category == 'GP' %} 
 		coucou
 		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{{ post.img }}{{ post.title }}{{ post.title2 }}</li>
-	  {% endfor %}
+	  {% endif %}{% endfor %}
 	</ul>
