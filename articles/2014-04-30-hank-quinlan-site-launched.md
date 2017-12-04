@@ -2,7 +2,7 @@
 layout: post
 title: "titre1"
 date: 2014-04-30
-image: "images/multicuiseur.png"
+image: "/images/multicuiseur.png"
 title2: "titre2"
 category: "GP"
 ---
