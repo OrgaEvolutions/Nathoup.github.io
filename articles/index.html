@@ -3,19 +3,10 @@ layout: default
 title: Nathoup's Blog 1901
 ---
 	<h1>{{ page.title }}</h1>
-1847
-"1847"
-<h2>test</h2>
-<div>
-    <p>
-      This blog is an outlet for the various things I come across and want to
-      spend time on in the course of research and everyday life.
-</p>
-</div>
 	<ul class="posts">
 		yo
 	  {% for post in site.pages %} {% if post.category == 'GP' %} 
-		coucou
+		<img src="{{ post.image }}">
 		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{{ post.img }}{{ post.title }}{{ post.title2 }}</li>
 	  {% endif %}{% endfor %}
 	</ul>
