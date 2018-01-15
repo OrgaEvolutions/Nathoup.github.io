@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: architect
 ---
 
 # [](#header-1)Header 1
