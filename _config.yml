@@ -13,6 +13,7 @@ markdown: kramdown
 #
 title : Jekyll Bootstrap-3
 tagline: Site Tagline
+theme: architect
 author :
   name : Name Lastname
   email : blah@email.test
