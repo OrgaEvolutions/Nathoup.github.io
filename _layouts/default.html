@@ -2,48 +2,13 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-			<!-- <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    			<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-			<link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">-->
 		</head>
 		<body>
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12">
-				      		<img src="/images/cover.jpg" height=10px>
-					</div>
-				</div>
-				<div class="row">
-					<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link" href="/!">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/about">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/cv">CV</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/articles">Blog</a>
-						</li>
-					</ul>
-				</div>
-
-
-				<!--<div id="content-wrapper">
-					<div class="inner clearfix">
-						<section id="main-content">
-							{{ content }}
-	-			</section></div></div>!-->
-
-				<section id="main-content">
-					1610
-					{{ content }}
-	-			</section>
+				{% include header.html %}
+				{{ content }}
 
 				<footer>
 				<ul>
