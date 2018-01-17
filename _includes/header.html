@@ -1,20 +1,22 @@
-<header style="background-image: images/cover.jpg">
+{% assign cover = "images/cover.jpg"}
+
+<header style="background-image: url({{ cover | absolute_url }})">
   <div class="container-fluid">
     <div class="row">
-					<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link" href="/!">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/about">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/cv">CV</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/articles">Blog</a>
-						</li>
-					</ul>
+	<ul class="nav nav-pills">
+		<li class="nav-item">
+			<a class="nav-link" href="/!">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/about">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/cv">CV</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/articles">Blog</a>
+		</li>
+	</ul>
       </div>
   </div>
 </header>
