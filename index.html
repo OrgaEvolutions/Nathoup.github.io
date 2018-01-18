@@ -1,21 +1,10 @@
 ---
 layout: default
 ---
-1625
-<h1>header#1</h1>
-<p>blablabla
-<h2>header#2</h2>
-<p>blablabla
-<button type="button" class="btn btn-info">Info</button>
-
-<div class="container" name="container">
-  <div class="row">
-    <div class="col-lg-2 col-md-3 col-xs-6">
-      C
-    </div>
-  
-    <div class="col-lg-2 col-md-3 col-xs-6">
-       D
-    </div>
-  </div>
-</div>
+1236
+<ul class="posts">
+	  {% for post in site.pages %} {% if post.category == 'GP' %} 
+		<img src="{{ post.image }}">
+		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{{ post.img }}{{ post.title }}{{ post.title2 }}</li>
+	  {% endif %}{% endfor %}
+</ul>
