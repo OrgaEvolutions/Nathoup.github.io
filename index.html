@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<h1 class="my-4">Welcome 1302</h1>
+<h1 class="my-4">Welcome 1305</h1>
 
 <div class="row">
 	<div class="col-lg-4 mb-4">
 
-		{% for post in site.pages %}{% if category!=nil %}
+		{% for post in site.pages %}{% if category!=empty %}
 			<div class="card h-100">
 				<h4 class="card-header">{{ post.title }}</h4>
 				<div class="card-body">
