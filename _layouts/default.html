@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-    			<link rel="stylesheet" type="text/css" href="css/modern-business.css">
-		</head>
-		<body>
-			<div class="container-fluid">
-				{% include header.html %}
-				{{ content }}
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/modern-business.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			{% include header.html %}
+			{{ content }}
 
 
-				{% include footer.html %}
-			</div>
-			<!-- Bootstrap core JavaScript -->
-			    <script src="/js/jquery.min.js"></script>
-			    <script src="/js/bootstrap.bundle.min.js"></script>
+			{% include footer.html %}
+		</div>
+		<!-- Bootstrap core JavaScript -->
+		    <script src="/js/jquery.min.js"></script>
+		    <script src="/js/bootstrap.bundle.min.js"></script>
 
-		</body>
-	</html>
+	</body>
+</html>
