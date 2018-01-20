@@ -1,3 +1,4 @@
 name: NH test
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+article_important: "bg-info text-white"
