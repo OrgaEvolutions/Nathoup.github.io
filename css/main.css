@@ -4,16 +4,16 @@ body {
 
 .social-links {
 	text-align: center;
-  	animation-name: baslik;
+/*  	animation-name: baslik;
 	opacity: 0;
 	animation-delay: 1s;
   	animation-duration: 2s;
-  	animation-fill-mode: forwards;
+  	animation-fill-mode: forwards;*/
 	.fa {
 		margin: 5px;
 		margin-top: 30px;
 		padding: 5px;
-		color: #ecf0f1;
+/*		color: #ecf0f1;
 		text-shadow: 1px 1px 5px #000;
 		transition-property: text-shadow;
 	 	transition-duration: 0.2s;
@@ -21,9 +21,10 @@ body {
 		&:hover{
 			color: #FFF;
 		  	text-shadow: 1px 1px 10px #000;
-		}
+		}*/
 	}
 }
+		
 .sosyal {
 	.fa {
 		margin-top: 10px !important;
