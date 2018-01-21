@@ -2,8 +2,6 @@ body {
   text-align: justify;
 }
 
-
-$mainColor: #ecf0f1;
 .social-links {
 	text-align: center;
   	animation-name: baslik;
@@ -15,7 +13,7 @@ $mainColor: #ecf0f1;
 		margin: 5px;
 		margin-top: 30px;
 		padding: 5px;
-		color: $mainColor;
+		color: #ecf0f1;
 		text-shadow: 1px 1px 5px #000;
 		transition-property: text-shadow;
 	 	transition-duration: 0.2s;
