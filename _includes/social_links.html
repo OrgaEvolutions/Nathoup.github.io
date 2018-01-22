@@ -2,12 +2,16 @@
     {% if site.email %}<a href="mailto:{{ site.email }}" class="author-social" target="_blank"><i class="fa fa-2x fa-envelope-square"></i></a>{% endif %}
     {% if site.twitter %}<a href="http://twitter.com/{{ site.twitter }}" class="author-social" target="_blank"><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a>{% endif %}
     {% if site.facebook %}<a href="http://facebook.com/{{ site.facebook }}" class="author-social" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>{% endif %}
-        <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=box_count&show_faces=true&width=65&action=like&font=arial&colorscheme=light&height=65" 
+    
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=button&show_faces=false&width=65&action=like&font=arial&colorscheme=light&height=65" 
       scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" allowTransparency="true"></iframe>
+    
     {% if site.google.plus %}<a href="http://plus.google.com/+{{ site.google.plus }}" class="author-social" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>{% endif %}
     {% if site.linkedin %}<a href="http://linkedin.com/in/{{ site.linkedin }}" class="author-social" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>{% endif %}
-        <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+    
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
     <script type="in/share" data-counter="top"></script>
+    
     {% if site.xing %}<a href="http://www.xing.com/profile/{{ site.xing }}" class="author-social" target="_blank"><i class="fa fa-2x fa-xing-square"></i></a>{% endif %}
     {% if site.instagram %}<a href="http://instagram.com/{{ site.instagram }}" class="author-social" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>{% endif %}
     {% if site.tumblr %}<a href="http://{{ site.tumblr }}.tumblr.com" class="author-social" target="_blank"><i class="fa fa-2x fa-tumblr-square"></i></a>{% endif %}
