@@ -16,22 +16,18 @@ fin_element_liste: "</li>"
 <!--<p class="meta">{{ page.date | date_to_string }}</p>-->
 
  <!-- Post Content -->
-    <article>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            {{ content }}
-          </div>
-         <div class = "col-lg-4">
-          <div class = "card sb-card">
-           <div class = "card-block">
-           <div class = "card-body">
-            <h6 class="card-title">Un commentaire, une question, une suggestion?</h6>
-            <a href="mailto:{{ site.email }}@subject:{{page.title}}" class="author-social" target="_blank"><i class="fa fa-2x fa-envelope-square"></i></a>
-           </div>
-           </div>
-          </div>
-         </div>
-       </div></div></article>
+<article>
+ <div class="container">
+   <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+       {{ content }}
+      </div>
+      <div class = "col-lg-4">
+        <div class = "col-lg-3"><a href="mailto:{{ site.email }}@subject:{{page.title}}" class="author-social" target="_blank"><i class="fa fa-2x fa-envelope-square"></i></a></div>
+        <div class = "col-lg-9"><h6>Un commentaire, une question, une suggestion?</h6></div>
+      </div>
+   </div>
+ </div>
+</article>
 
 {% include social_links.html %} 
