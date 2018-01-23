@@ -2,18 +2,12 @@
 <html>
 	<head>
 		<title>{{ page.title }}</title>
-		
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		
-		
-		<!-- infos pour partage FB -->
-		  <meta property="og:url"           content="{{ page.url }}" />
-		  <meta property="og:type"          content="website" />
-		  <meta property="og:title"         content="{{ page.title }}" />
-		 {% if page.intro %} <meta property="og:description"   content="{{ page.intro }}" />{% endif %}
-		  <!--<meta property="og:image"         content="TBD" />-->
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+			
+		{% include article_head.html %}
+
 
 	</head>
 	<body>
