@@ -1,6 +1,8 @@
 body {
   text-align: justify;
+	font-family: 'Poppins', sans-serif;
 }
+
 
 .social-links {
 	text-align: center;
@@ -21,17 +23,6 @@ body {
 		&:hover{
 			color: #FFF;
 		  	text-shadow: 1px 1px 10px #000;
-		}
-	}
-}
-		
-.sosyal {
-	.fa {
-		margin-top: 10px !important;
-		color: $bg-blue !important;
-	  	text-shadow: 1px 1px 1px rgba(81, 81, 81, 0.3) !important;
-		&:hover{
-		  text-shadow: 1px 1px 4px rgba(81, 81, 81, 1) !important;
 		}
 	}
 }
