@@ -1,3 +1,4 @@
+{{ include.type }}
 {% case {{ include.type }} %}
   {% when'paragraphe' %}
     <p>
@@ -9,6 +10,8 @@
 
   {% when 'fin_passage_important' %}
     </div>
+  {% else %}
+     perdu
 {% endcase %}
 
 <!--{% increment page.id_count %}
