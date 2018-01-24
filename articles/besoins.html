@@ -12,6 +12,11 @@ J'aborde dans cet article un point qui est fondamental lorsqu'on aime comprendre
 {{ layout.passage_important }}notre vie est en permanence guidée par nos besoins. {{ layout.fin_passage_important }}
 {{ layout.fin_paragraphe }}
 
+{% include 'article_layout.html' type='paragraphe' %}
+J'aborde dans cet article un point qui est fondamental lorsqu'on aime comprendre ou évoluer dans ses relations:
+{% include 'article_layout.html' type='passage_important' %}notre vie est en permanence guidée par nos besoins. {% include 'article_layout.html' type='fin_passage_important' %}
+{% include 'article_layout.html' type='fin_paragraphe' %}
+
 {{ layout.paragraphe }}
 Je fais référence aux besoins d’appartenance, de reconnaissance, de sécurité, d’ordre, de liberté, de développement, de challenge, de solitude, …
 <br>On rencontre souvent, sans en être forcément conscients, des difficultés dans notre quotidien et relations dues aux faits:
