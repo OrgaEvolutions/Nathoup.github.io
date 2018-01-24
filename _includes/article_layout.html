@@ -1,5 +1,5 @@
-page.type
-{% case page.type %}
+{{ page.type }}
+{% case {{ page.type }} %}
   {% when'paragraphe' %}
     <p>
   {% when 'fin_paragraphe' %}
