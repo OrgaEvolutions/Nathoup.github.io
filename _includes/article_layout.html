@@ -1,3 +1,4 @@
+{{ page.id_count }}
 {% case include.type %}
   {% when 'paragraphe' %}
     <p>
@@ -10,13 +11,13 @@
   {% when 'fin_passage_important' %}
     </div>
   {% when 'exemple' %}
-    {% increment page.id_count %}
-<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{page.id_count}}" aria-expanded="false" aria-controls="collapseExample{{page.id_count}}">
+    a{% increment page.id_count %}z
+<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{ page.id_count }}" aria-expanded="false" aria-controls="collapseExample{{ page.id_count }}">
   Voir un exemple
 </a>
 
 
-<div class="collapse" id="collapseExample{{page.id_count}}">
+<div class="collapse" id="collapseExample{{ page.id_count }}">
   <div class="card card-body">
       <p class="text-dark" style="margin-left : 10px;">
           <span class="glyphicon glyphicon-hand-right"></span>
