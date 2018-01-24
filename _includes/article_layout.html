@@ -1,6 +1,17 @@
 
+{% if page.type='paragraphe' %}
+  <p>
+{% elsif page.type='fin_paragraphe' %}
+  </p>
 
-{% increment page.id_count %}
+{% elsif page.type='passage_important' %}
+  <div class='alert alert-primary' role='alert'><!--<span class='glyphicon glyphicon-star' aria-hidden='true'></span> -->"
+
+{% elsif page.type='fin_passage_important' %}
+</div>
+{% endif %}
+
+<!--{% increment page.id_count %}
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{page.id_count}}" aria-expanded="false" aria-controls="collapseExample{{page.id_count}}">
   Voir un exemple
 </a>
