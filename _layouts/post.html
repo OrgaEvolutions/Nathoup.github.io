@@ -5,8 +5,8 @@ passage_important: "<div class='alert alert-primary' role='alert'><!--<span clas
 fin_passage_important: "</div>"
 paragraphe: "<p>"
 fin_paragraphe: "</p>"
-exemple: '<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"{% increment id_count %} aria-expanded="false" aria-controls="collapseExample"{{ id_count }}>Voir un exemple</a><div class="collapse" id="collapseExample"{{ id_count }}><div class="card card-body"><p class="text-dark" style="margin-left : 10px;"><span class="glyphicon glyphicon-hand-right"></span> <i>"'
-fin_exemple: "</i></p></div></div>"
+exemple: {% include example.html text='test' id = {% increment id_count %}
+fin_exemple: ""
 debut_liste: "<ul>"
 element_liste: "<li>"
 fin_liste: "</ul>"
