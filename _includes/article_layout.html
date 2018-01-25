@@ -1,15 +1,3 @@
-{% increment id_count2 %}
-{% increment id_count2 %}
-{% increment id_count2 %}-1
-
-{% capture about_me %}
-{% increment id_count2 %}
-{% endcapture %}
-about_me {{ about_me }}
-
-{% assign nb = increment id_count2 %}
-nb {{ nb }}
-
 {% case include.type %}
   {% when 'paragraphe' %}
     <p>
@@ -22,9 +10,10 @@ nb {{ nb }}
   {% when 'fin_passage_important' %}
     </div>
   {% when 'exemple' %}
-    a{% increment page.id_count %}z
-
-    a{% increment id_count2 %}z
+    {% capture id_count %}
+      {% increment counter %}
+    {% endcapture %}
+{{id_count}}
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{ id_count }}" aria-expanded="false" aria-controls="collapseExample{{ id_count }}">
   Voir un exemple
 </a>
