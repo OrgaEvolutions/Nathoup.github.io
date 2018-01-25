@@ -10,10 +10,8 @@
   {% when 'fin_passage_important' %}
     </div>
   {% when 'exemple' %}
-    {% capture id_count %}
-      {% increment counter %}
-    {% endcapture %}
-{{id_count}}
+    {% capture id_count %}{%increment counter%}{% endcapture %}
+a{{id_count}}b
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{id_count}}" aria-expanded="false" aria-controls="collapseExample{{id_count}}">
   Voir un exemple
 </a>
