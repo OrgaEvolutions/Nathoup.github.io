@@ -1,11 +1,8 @@
----
-id_count: 0
----
+{% assign id_count2 = 0 %}
 
-
-a{{ page.id_count }}
-b{ page.id_count }
-ef
+a{{ site.id_count }}
+b{ site.id_count }
+eg {{id_count2}}
 {% case include.type %}
   {% when 'paragraphe' %}
     <p>
@@ -18,7 +15,9 @@ ef
   {% when 'fin_passage_important' %}
     </div>
   {% when 'exemple' %}
-    a{% increment include.id_count %}z
+    a{% increment site.id_count %}z
+
+    a{% increment id_count2 %}z
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{ id_count }}" aria-expanded="false" aria-controls="collapseExample{{ id_count }}">
   Voir un exemple
 </a>
