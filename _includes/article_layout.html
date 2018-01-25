@@ -1,7 +1,10 @@
-{% assign id_count = 0 %}
+---
+id_count : 0
+---
 
-a{{ id_count }}
-b{ id_count }
+
+a{{ page.id_count }}
+b{ page.id_count }
 ert
 {% case include.type %}
   {% when 'paragraphe' %}
