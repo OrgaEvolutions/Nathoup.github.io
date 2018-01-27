@@ -5,7 +5,8 @@
     </p>
 
   {% when 'passage_important' %}
-    <div class='alert alert-primary' role='alert'><!--<span class='glyphicon glyphicon-star' aria-hidden='true'></span> -->
+    <!--<div class='alert alert-primary' role='alert'>-->
+      <div style="border-left: thick solid #ff0000;margin-left : 100px">
 
   {% when 'fin_passage_important' %}
     </div>
@@ -42,17 +43,3 @@
   {% else %}
      perdu
 {% endcase %}
-
-<!--{% increment page.id_count %}
-<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample{{page.id_count}}" aria-expanded="false" aria-controls="collapseExample{{page.id_count}}">
-  Voir un exemple
-</a>
-
-
-<div class="collapse" id="collapseExample{{page.id_count}}">
-  <div class="card card-body">
-      <p class="text-dark" style="margin-left : 10px;">
-          <span class="glyphicon glyphicon-hand-right"></span>
-          <i>test</i>
-      </p></div></div>
--->
