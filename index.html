@@ -18,12 +18,16 @@ layout: default
 					</div>
 					<div class="row">
 						
-							<div class="col-sm-10" style="color: gray;">								
-								<a href="{{ article.url }}" style= "text-decoration: none;">{{ article.intro }}</a>
+							<div class="col-sm-10">								
+								<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
+									{{ article.intro }}
+								</a>
 							</div>
 
 							<div class="col-sm-2 align-middle align-text-middle btn btn-primary">
-								Learn More
+								<a href="{{ article.url }}">
+									Lire l'article
+								</a>
 							</div>
 					</div>
 			</div>
