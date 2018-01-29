@@ -15,17 +15,18 @@ layout: default
 								{{ article.title }}
 							</h3>
 						</a>
+					</div>
+					<div class="row">
 						<a href="{{ article.url }}" style= "text-decoration: none;">
-							<div class="col-sm-10" style="color: gray;vertical-align: middle">								
+							<div class="col-sm-10" style="color: gray;">								
 								{{ article.intro }}
 							</div>
 
-							<div class="col-sm-2 align-middle btn btn-primary">
+							<div class="col-sm-2 align-middle btn btn-primary" style="vertical-align: middle;">
 								Learn More
 							</div>
 						</a>
 					</div>
-				</a>
 			</div>
 		{% endif %}{% endfor %}
 	</div>
