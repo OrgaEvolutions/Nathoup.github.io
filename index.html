@@ -8,7 +8,7 @@ layout: default
 	<div class="col-md-8 mx-auto">
 		{% for article in site.pages %}{% if article.layout=="article" %}
 			<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
-				<a href="{{ article.url }}">
+				<a href="{{ article.url }}" style="text-decoration: none;">
 					<h3 style="margin-top: 20px;margin-bottom: 10px;">{{ article.title }}</h3>
 					<p style="color: gray;">{{ article.intro }}</p>
 				</a>
