@@ -8,18 +8,22 @@ layout: default
 	<div class="col-md-8 mx-auto">
 		{% for article in site.pages %}{% if article.layout=="article" %}
 			<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
-				<a href="{{ article.url }}";>
+				
 					<div class="row">
-						<div class="col-12">
-							<h3 style="margin-top: 20px;margin-bottom: 10px;">{{ article.title }}</h3>
-						</div>
-						<div class="col-sm-10">								
-							<p style="color: gray; text-decoration: none;">{{ article.intro }}</p>
-						</div>
-													     
-						<div class="col-sm-2 align-middle btn btn-primary">
-							Learn More
-						</div>
+						<a href="{{ article.url }}">
+							<h3 class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
+								{{ article.title }}
+							</h3>
+						</a>
+						<a href="{{ article.url }}" style= "text-decoration: none;">
+							<div class="col-sm-10" style="color: gray;vertical-align: middle">								
+								{{ article.intro }}
+							</div>
+
+							<div class="col-sm-2 align-middle btn btn-primary">
+								Learn More
+							</div>
+						</a>
 					</div>
 				</a>
 			</div>
