@@ -3,6 +3,10 @@ markdown: kramdown
 #permalink: /:title
 
 url_accueil: /index.html
+url_contact: /contact.html
+url_auteur: /auteur.html
+url_config: /about_config.html
+url_inspirations: /inspirations.html
 
 # Social
 # if you don't have any of social below, comment the line.
