@@ -6,13 +6,16 @@ layout: default
 
 Voici les utilitaires pour le site - merci pour leur mise à disposition et à tous ceux qui contribuent à les faire exister!
 
-  <ul>
-{% for name in site.data.about_config %}
-
-    <li>
-      <a href={{ name.link }} target="_blank">
-      <img src="/images/{{ name.img }}">
-    </a>
-  </li>
-{% endfor %}
-</ul>
+<div class="row">
+  <div class="col-md-8 col-offset-md-2">
+    <div class="row">
+      {% for name in site.data.about_config %}
+          <div class="col-md-3">
+            <a href={{ name.link }} target="_blank">
+              <img src="/images/{{ name.img }}">
+            </a>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
