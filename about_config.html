@@ -6,13 +6,13 @@ layout: default
 
 Voici les utilitaires pour le site - merci pour leur mise à disposition et à tous ceux qui contribuent à les faire exister!
 
+  <ul>
+{% for name in site.data.about_config %}
 
-<li>
-  <ul><a href="https://github.com/"><i class="fa fa-1x fa-github"></i> github</a></ul>
-  <ul><a href="https://jekyllrb.com/"><img src="https://jekyllrb.com/img/logo-2x.png"></a></ul>
-  <ul><a href="https://getbootstrap.com/"><img src="https://micro.lilo.org/im.php?im=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.2lPcNBjKmc6P7DhGJ02cuAHaHa%26pid%3DApi">bootstrap</a></ul>
-
-  <ul><a href="https://fontawesome.com/"><i class="fa fa-1x fa-logo"></i>Font Awesome</a></ul>
-  <ul><a href="https://fonts.google.com/">google fonts</a></ul>
-
-</li>
+    <li>
+      <a href={{ name.link }} target="_blank">
+      <img src="/images/{{ name.img }}">
+    </a>
+  </li>
+{% endfor %}
+</ul>
