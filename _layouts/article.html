@@ -49,8 +49,8 @@ layout: default
            <p><div class="bg-light">
             <div class="row"><div class="col"><b>partager l'article</b></div></div>
              <div class="row">
-              <div class="col-md-6"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></div>
-              <div class="col-md-6"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></div>
+              <div class="col-md-6"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></div>
+              <div class="col-md-6"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></div>
              </div>
            </div></p>   
           
@@ -67,4 +67,4 @@ layout: default
  </div>
 </article>
 
-<!--{% include social_links.html %} -->
+{% include footer.html %}
