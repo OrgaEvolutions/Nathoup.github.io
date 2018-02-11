@@ -10,7 +10,7 @@ title: Nathoup's blog
 		<div class="row">
 			{% for article in site.pages %}{% if article.layout=="article" %}
 				<div class="col-md-6" style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
-
+					<div class="container">
 						<div class="row">
 							<a href="{{ article.url }}">
 								<h3 class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
@@ -35,6 +35,7 @@ title: Nathoup's blog
 								</a>
 							</div>
 						</div>
+					</div>
 				</div>
 			{% endif %}{% endfor %}
 		</div>
