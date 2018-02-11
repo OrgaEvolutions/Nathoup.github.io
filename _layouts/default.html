@@ -10,7 +10,7 @@
 		<!-- infos pour partage FB -->
 		<meta property="og:url"           content="{{ page.url }}" />
 		<meta property="og:type"          content="website" />
-		<meta property="og:title"         content="{{ page.title }}" />
+		{% if page.title %} <meta property="og:title"         content="{{ page.title }}" />{% endif %}
 		{% if page.intro %} <meta property="og:description"   content="{{ page.intro }}" />{% endif %}
 		<!--<meta property="og:image"         content="TBD" />-->
 
