@@ -9,13 +9,13 @@ title: Nathoup's blog
 	<div class="col-md-8 mx-auto">
 		<div class="row">
 			{% for article in site.pages %}{% if article.layout=="article" %}
-				<div class="col-md-6" style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
+				<div class="col-md-4" style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
 					<div class="container">
 						<div class="row">
 							<a href="{{ article.url }}">
-								<h3 class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
+								<h4 class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
 									{{ article.title }}
-								</h3>
+								</h4>
 							</a>
 						</div>
 						<div class="row">
@@ -27,13 +27,13 @@ title: Nathoup's blog
 							</div>
 
 
-							<div class="col-sm-2">
+							<!--<div class="col-sm-2">
 								<a href="{{ article.url }}">
 									<div  class="btn btn-primary align-middle">
 										Lire l'article
 									</div>
 								</a>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
