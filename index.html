@@ -7,25 +7,26 @@ title: Nathoup's blog
 
 <div class="row">
 	<div class="col-md-8 mx-auto">
-		{% for article in site.pages %}{% if article.layout=="article" %}
-			<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
-				
-					<div class="row">
-						<a href="{{ article.url }}">
-							<h3 class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
-								{{ article.title }}
-							</h3>
-						</a>
-					</div>
-					<div class="row">
-						
+		<div class="row">
+			{% for article in site.pages %}{% if article.layout=="article" %}
+				<div class="col-md-6" style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
+
+						<div class="row">
+							<a href="{{ article.url }}">
+								<h3 class="col-12" style="margin-top: 20px;margin-bottom: 10px;">
+									{{ article.title }}
+								</h3>
+							</a>
+						</div>
+						<div class="row">
+
 							<div class="col-sm-10">								
 								<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
 									{{ article.intro }}
 								</a>
 							</div>
 
-							
+
 							<div class="col-sm-2">
 								<a href="{{ article.url }}">
 									<div  class="btn btn-primary align-middle">
@@ -33,8 +34,9 @@ title: Nathoup's blog
 									</div>
 								</a>
 							</div>
-					</div>
-			</div>
-		{% endif %}{% endfor %}
+						</div>
+				</div>
+			{% endif %}{% endfor %}
+		</div>
 	</div>
 </div>
