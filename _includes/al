@@ -38,9 +38,9 @@
   {% when 'fin_element_liste' %}
     </li>
   {% when 'citation' %}
-    <center><i>
+    <center><i>"
   {% when 'fin_citation' %}
-    </i></center>
+    "</i></center>
 
   {% else %}
      perdu
