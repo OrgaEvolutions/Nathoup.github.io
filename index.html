@@ -5,30 +5,32 @@ title: Nathoup's blog
 
 <h1 class="my-4"><center>Bienvenue à toi !</center></h1>
 
+Il s'agit d'un blog autour du développement personnel et relationnel. Pioche le titre qui t'inspire!
+
 <div class="row">
 	<div class="col-md-8 mx-auto">
 		<div class="row">
 			{% for article in site.pages %}{% if article.layout=="article" %}
 				<div class="col-md-4" style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;">
 					
-							<a href="{{ article.url }}">
-								<h4 style="margin-top: 20px;margin-bottom: 10px;">
-									{{ article.title }}
-								</h4>
-							</a>
-				
-							<br>
-							<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
-								{{ article.intro }}
-							</a>
+					<a href="{{ article.url }}">
+						<h4 style="margin-top: 20px;margin-bottom: 10px;">
+							{{ article.title }}
+						</h4>
+					</a>
 
-							<!--<div class="col-sm-2">
-								<a href="{{ article.url }}">
-									<div  class="btn btn-primary align-middle">
-										Lire l'article
-									</div>
-								</a>
-							</div>-->
+					<br>
+					<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
+						{{ article.intro }}
+					</a>
+
+					<!--<div class="col-sm-2">
+						<a href="{{ article.url }}">
+							<div  class="btn btn-primary align-middle">
+								Lire l'article
+							</div>
+						</a>
+					</div>-->
 				</div>
 			{% endif %}{% endfor %}
 		</div>
