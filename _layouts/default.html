@@ -17,40 +17,40 @@
 
 	</head>
 	<body>
-		
-		{% if page.title %}
-		<header>
-		  <div class="bg-primary text-white">
-		   <center>
-		    <h1 style="font-family: 'Indie Flower', cursive;">
-		     {{ page.title }}
-		    </h1>
-		     {% if page.intro %}
-			   <div class="container">
-			<div class="row">
-			  <div class="col-md-12 mx-auto">
-			    {{ page.intro }}
-			  </div>
-			</div>
-		     </div>
-			   {% endif %}
-		   </center>
-		  </div>
-		</header>
-		{% endif %}
-		<br><br>
-		
-		  <!-- Load Facebook SDK for JavaScript -->
-		  <div id="fb-root"></div>
-		  <script>(function(d, s, id) {
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
 		    var js, fjs = d.getElementsByTagName(s)[0];
 		    if (d.getElementById(id)) return;
 		    js = d.createElement(s); js.id = id;
 		    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
 		    fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));</script>
-		
+
 		{% include header.html %}
+		
+		{% if page.title %}
+			<header>
+			  <div class="bg-primary text-white">
+			   <center>
+			    <h1 style="font-family: 'Indie Flower', cursive;">
+			     {{ page.title }}
+			    </h1>
+				   {% if page.intro %}
+					   <div class="container">
+						<div class="row">
+						  <div class="col-md-12 mx-auto">
+						    {{ page.intro }}
+						  </div>
+						</div>
+					     </div>
+				   {% endif %}
+			   </center>
+			  </div>
+			</header>
+		{% endif %}
+		<br><br>
+		
 		{{ content }}
 
 		<!-- Bootstrap core JavaScript -->
