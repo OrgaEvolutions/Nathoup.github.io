@@ -4,16 +4,10 @@ title: Quid réalisation (technique) du site
 intro: Voici les utilitaires pour le site - merci pour leur mise à disposition, ainsi qu'à tous ceux qui contribuent à les faire exister!
 ---
 
-<div class="row">
-  <div class="col-md-8 offset-md-2">
-    <div class="row">
-      {% for name in site.data.about_config %}
-          <div class="col-md-6">
-            <a href={{ name.link }} target="_blank">
-              <img src="/images/{{ name.img }}" width=150>
-            </a>
-          </div>
-      {% endfor %}
+{% for name in site.data.about_config %}
+    <div class="col-md-6">
+      <a href={{ name.link }} target="_blank">
+        <img src="/images/{{ name.img }}" width=150>
+      </a>
     </div>
-  </div>
-</div>
+{% endfor %}
