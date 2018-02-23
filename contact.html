@@ -1,12 +1,19 @@
 ---
 layout: default
-title: Entrons en contact!
+title: Entrer en contact
 ---
 
 Vous souhaitez me contacter? Avec plaisir!
-<br><b>A propos du site</b>
-Commentaire, suggestion, critique, proposition, tout est le bienvenu!
-<p><br>Services pour particuliers<b>
+<br>
+<a data-toggle="collapse" href="about_site" aria-expanded="false" style= "text-decoration: none;color: black;">
+
+  <b>A propos du site</b>
+</a>
+
+<div class="collapse about_site">
+  Commentaire, suggestion, critique, proposition, tout est le bienvenu!
+</div>
+<p><br><b>Services pour particuliers</b>
 {% include al type='debut_liste' %}
 {% include al type='element_liste' %}coaching complet{% include al type='fin_element_liste' %}
 {% include al type='element_liste' %}aide ponctuelle{% include al type='fin_element_liste' %}
@@ -16,7 +23,7 @@ pourriez travailler relativement à un objectif que vous me décrirez{% include 
 {% include al type='fin_liste' %}
 </p>
 
-  <br><p>Services pour entreprises</p><b>
+  <br><b><p>Services pour entreprises</p></b>
 <br>Fort d'une expérience en agilité, Design Thinking, et holacracy, je suis à présent une ambassadrice de ces différents modes de travail, 
 qui permettent d'allier stratégie, efficacité, motivation.
 
