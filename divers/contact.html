@@ -57,14 +57,16 @@ intro: Vous souhaitez me contacter? Avec plaisir!
       
       <div class="row">
           {% for service in site.data.services %}{% if service.type=="entreprise" %}
-              <div class="card col-md-4 text-center">
-                <h6 class="card-header bg-primary" style="height:100px">{{service.titre}}</h6>
-                <div class="card-block">
-                  <p class="card-text">
-                    {{service.description}}
-                  </p>
-                </div>
-              </div>
+            <div class="col-md-4">
+                  <div class="card text-center">
+                    <h5 class="card-header bg-primary" style="height:100px">{{service.titre}}</h5>
+                    <div class="card-block">
+                      <p class="card-text">
+                        {{service.description}}
+                      </p>
+                    </div>
+                  </div>
+            </div>
           {% endif %}{% endfor %}
         </div>
       </div>
