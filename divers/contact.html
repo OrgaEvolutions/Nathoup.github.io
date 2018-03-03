@@ -25,18 +25,19 @@ intro: Vous souhaitez me contacter? Avec plaisir!
       <br>Cette formation, alliée à mon expérience, me permet de vous proposer différents services:</p>
       
       <div class="row">
-        {% for service in site.data.services %}{% if service.type=="particulier" %}
-          <div class="col-md-4">
-            <div class="card text-center">
-              <h5 class="card-header bg-primary">{{service.titre}}</h5>
-              <div class="card-block">
-                <p class="card-text">
-                  {{service.description}}
-                </p>
+        <div class="card-deck">
+          {% for service in site.data.services %}{% if service.type=="particulier" %}
+
+              <div class="col-md-4 card text-center">
+                <h6 class="card-header bg-primary">{{service.titre}}</h6>
+                <div class="card-block">
+                  <p class="card-text">
+                    {{service.description}}
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        {% endif %}{% endfor %}
+          {% endif %}{% endfor %}
+        </div>
       </div>
     </div>
 
