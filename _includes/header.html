@@ -8,14 +8,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href={{site.url_accueil}}>Accueil</a>
+              <a class="nav-link" href={% link /index.html %}>Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href={{site.url_accueil}}>Articles</a>
+              <a class="nav-link" href={% link /index.html %}>Articles</a>
             </li>
                 
             <li class="nav-item">
-              <a class="nav-link" href={{site.url_contact}}>Contact</a>
+              <a class="nav-link" href={% link /divers/contact.html %}>Contact</a>
             </li>
                 
             <li class="nav-item dropdown">
@@ -23,9 +23,9 @@
                 A propos
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href={% link divers/auteur.html %}>L'auteur</a>
-                <a class="dropdown-item" href={{site.url_config}}>Le site</a>
-                <a class="dropdown-item" href={{site.url_inspirations}}>Inspirations</a>
+                <a class="dropdown-item" href={% link /divers/auteur.html %}>L'auteur</a>
+                <a class="dropdown-item" href={% link /divers/about_site.html %}>Le site</a>
+                <a class="dropdown-item" href={% link /divers/about_site.html %}>Inspirations</a>
               </div>
             </li>
                 
