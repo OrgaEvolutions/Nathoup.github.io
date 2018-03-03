@@ -19,17 +19,25 @@ intro: Vous souhaitez me contacter? Avec plaisir!
       <b>Services pour particuliers</b>
     </a></p>
 
-    <p>Après avoir moi-même bénéficié de coaching en entreprise, je me suis formée et ai obtenu un diplôme de coach en 2016. 
-    Il s'agit d'un diplôme reconnu par l'Etat (RNCP 1).
-    <br>Cette formation, alliée à mon expérience, me permet de proposer différents services:</p>
     <div class="collapse" id="services_particuliers">
-      {% include al type='debut_liste' %}
-        {% include al type='element_liste' %}coaching complet{% include al type='fin_element_liste' %}
-        {% include al type='element_liste' %}aide ponctuelle{% include al type='fin_element_liste' %}
-        {% include al type='element_liste' %}"audit de votre personne" = qu'est-ce que vous m'inspirez, ce que vous 
-        pourriez travailler relativement à un objectif que vous me décrirez{% include al type='fin_element_liste' %}
-        {% include al type='element_liste' %}tbd{% include al type='fin_element_liste' %}
-      {% include al type='fin_liste' %}
+      <p>J'ai suivi une formation de coach, avec un diplôme certifié par l'Etat.
+      Le coaching se démarque d'autres formes d'accompagnement par un ensemble de principes: blabla.
+      <br>Cette formation, alliée à mon expérience, me permet de vous proposer différents services:</p>
+      
+      <div class="row">
+        {% for service in site.data.services %}{% if service.type=="particulier" %}
+          <div class="col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header bg-primary">{{service.titre}}</h5>
+              <div class="card-block">
+                <p class="card-text">
+                  {{service.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
 
     <p><a data-toggle="collapse" href="#services_entreprises" aria-expanded="false" style= "text-decoration: none;color: black;">
@@ -48,7 +56,7 @@ intro: Vous souhaitez me contacter? Avec plaisir!
       <p></p>
       
       <div class="row">
-        {% for service in site.data.services %}
+        {% for service in site.data.services %}{% if service.type=="entreprise" %}
           <div class="col-md-4">
             <div class="card text-center">
               <h5 class="card-header bg-primary">{{service.titre}}</h5>
