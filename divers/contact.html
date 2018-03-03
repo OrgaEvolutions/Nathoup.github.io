@@ -58,8 +58,8 @@ intro: Vous souhaitez me contacter? Avec plaisir!
       <div class="row">
         <div class="card-deck">
           {% for service in site.data.services %}{% if service.type=="entreprise" %}
-              <div class="card text-center">
-                <h6 class="card-header bg-primary">{{service.titre}}</h6>
+              <div class="card col-md-4 text-center">
+                <h6 class="card-header bg-primary" style="height:100px">{{service.titre}}</h6>
                 <div class="card-block">
                   <p class="card-text">
                     {{service.description}}
