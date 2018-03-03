@@ -58,7 +58,6 @@ intro: Vous souhaitez me contacter? Avec plaisir!
       <div class="row">
         <div class="card-deck">
           {% for service in site.data.services %}{% if service.type=="entreprise" %}
-            <div class="col-md-4">
                   <div class="card text-center">
                     <h5 class="card-header bg-primary" style="height:70px">{{service.titre}}</h5>
                     <div class="card-block">
@@ -67,7 +66,6 @@ intro: Vous souhaitez me contacter? Avec plaisir!
                       </p>
                     </div>
                   </div>
-            </div>
           {% endif %}{% endfor %}
         </div>
       </div>
