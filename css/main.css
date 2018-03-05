@@ -27,7 +27,7 @@ body {
 	}
 }
 
-@media (min-width: 460px) {
+@media (min-width: 720px) {
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -38,7 +38,7 @@ body {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 719px) {
   .card-columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
