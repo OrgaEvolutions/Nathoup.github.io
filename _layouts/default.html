@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-			
+
 		<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Give+You+Glory|Indie+Flower|Paytone+One|Poppins|Shadows+Into+Light+Two" rel="stylesheet">
 		<!-- infos pour partage FB -->
 		<meta property="og:url"           content="{{ page.url }}" />
@@ -25,21 +25,21 @@
 		  gtag('config', 'UA-114683171-1');
 		</script>
 
-		
+
 	</head>
 	<body>
 		<!-- Load Facebook SDK for JavaScript -->
-		<div id="fb-root"></div>
+		<!-- <div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		    var js, fjs = d.getElementsByTagName(s)[0];
 		    if (d.getElementById(id)) return;
 		    js = d.createElement(s); js.id = id;
 		    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
 		    fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));</script>
+		  }(document, 'script', 'facebook-jssdk'));</script>-->
 
 		{% include header.html %}
-		
+
 		{% if page.title %}
 			<header>
 			  <div class="bg-primary text-white">
@@ -47,29 +47,29 @@
 			    <h1 style="font-family: 'Indie Flower', cursive;">
 			     {{ page.title }}
 			    </h1>
-				   {% if page.intro %}
-					   <div class="container-fluid">
-						<div class="row">
-						  <div class="col-md-12 mx-auto">
-						    {{ page.intro }}
-				   			{% if page.intro_large %}
-							  <div class="d-none d-md-block">{{page.intro_large}}</div>
-							{% endif %}
-							  
-						  </div>
-						</div>
-					     </div>
-				   {% endif %}
+			   {% if page.intro %}
+				   <div class="container-fluid">
+					<div class="row">
+					  <div class="col-md-12 mx-auto">
+					    {{ page.intro }}
+						{% if page.intro_large %}
+						  <div class="d-none d-md-block">{{page.intro_large}}</div>
+						{% endif %}
+
+					  </div>
+					</div>
+				     </div>
+			   {% endif %}
 			   </center>
 			  </div>
 			</header>
 		{% endif %}
 		<br><br>
-		
-		
+
+
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 cold-md-10 mx-auto">
+			<div class="col-lg-8 cold-md-10 col-sm-12 mx-auto">
 				{{ content }}
 			</div>
 		</div>
