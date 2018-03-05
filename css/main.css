@@ -3,31 +3,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-
-.social-links {
-	text-align: center;
-  	animation-name: baslik;
-	/*opacity: 0;*/
-	animation-delay: 1s;
-  	animation-duration: 2s;
-  	animation-fill-mode: forwards;
-	.fa {
-		margin: 5px;
-		margin-top: 30px;
-		padding: 5px;
-		color: #ecf0f1;
-		text-shadow: 1px 1px 5px #000;
-		transition-property: text-shadow;
-	 	transition-duration: 0.2s;
-	 	transition-delay: 0s;
-		&:hover{
-			color: #FFF;
-		  	text-shadow: 1px 1px 10px #000;
-		}
-	}
-}
-
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -38,11 +14,22 @@ body {
   }
 }
 
-@media (max-width: 749px) {
+@media (min-width: 446px) {
   .card-columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
