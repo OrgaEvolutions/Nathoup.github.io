@@ -35,3 +35,8 @@ body {
     column-gap: 1.25rem;
   }
 }
+
+.navbar-light .navbar-toggler {
+  color: #007bff;
+  border-color: #007bff;
+}
