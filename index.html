@@ -8,7 +8,7 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 <div class="row">
 	<div class="card-columns">
 		<h1>hey</h1>
-		{% for tag in site.tags %}
+		{% for tag in site.pages.tags %}
 			{% assign t = tag | first %}
 		  	{% assign articles = tag | last %}
 			{{ t | downcase }}
