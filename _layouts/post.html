@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<article>
+    <div class="row">
+       <div class="col-md-8 mx-auto">
+        {{ content }}
+       </div>
+       
+     <div class = "col-md-offset-1 col-md-3">
+           <p><div class="bg-light">
+            <div class="row"><div class="col-12"><b>me contacter</b></div></div>
+             <div class="row"><div class="col-12">
+              <!--<div class = "col-md-2"><a href="mailto:{{ site.email }}" class="author-social" target="_blank"><i class="fa fa-2x fa-envelope-square"></i></a></div>
+              <div class = "col-md-10">-->
+              <h6>un commentaire, une question, une suggestion?</h6>
+             </div></div>
+             <div class="row"><div class="col-12">
+               <form action="https://formspree.io/nathalie.houpert@gmail.com" method="POST">
+                 <div class="form-group"><textarea name=Message rows=5 class="form-control" ></textarea></div>
+                <button type=submit><i class="fa fa-1x fa-envelope-square"></i> Envoyer</button>
+              </form> 
+              </div></div>
+           </div></p>
+
+      
+        
+           <p><div class="bg-light">
+            <div class="row"><div class="col"><b>partager l'article</b></div></div>
+             <div class="row">
+              <div class="col-md-6"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></div>
+              <div class="col-md-6"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></div>
+             </div>
+           </div></p>   
+          
+           <p><div class="bg-light">
+            <div class="row"><div class="col"><b>suivre les nouveautés</b></div></div>
+             <div class="row">
+               <div class="col-md-12">
+		                       
+                 
+                 <div id="mc_embed_signup">
+			<form action="https://github.us17.list-manage.com/subscribe/post?u=c92282615c03ee7c88805781b&amp;id=42c312e904" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+				    
+                 		<div class="form-group"><input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email" required></div>
+			    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			     	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c92282615c03ee7c88805781b_42c312e904" tabindex="-1" value=""></div>
+				    <button type="submit" name="subscribe" id="mc-embedded-subscribe">S'abonner</button>
+			    </div>
+			</form>
+		  </div>
+			 
+                 
+		     </div>
+	 </div></div>
+	 </p>
+    
+        </div>
+    </div>
+</article>
