@@ -7,29 +7,43 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 
 <div class="row">
 	<div class="card-columns">
-		{% for article in site.pages %}{% if article.layout=="article" %}
-		<!--class="col-md-4" -->
-			<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;display: inline-block;">
+		{% for tag in site.tags %}
+		  	{% assign t = tag | first %}
+		  	{% assign articles = tag | last %}
 
-				<a href="{{ article.url }}">
-					<h4 style="margin-top: 10px;margin-bottom: 5px;">
-						{{ article.title }}
-					</h4>
-				</a>
+			{{ t | downcase }}
+		
+			<h1>{{t}}</h1>
+		
+			<!--{% for article in site.pages %}-->
+			{% for article in articles %}
+				<!--{% if article.layout=="article" %}-->
+				{% if article.tags contains t %}
 
-				<br>
-				<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
-					{{ article.intro }}
-				</a>
+					<!--class="col-md-4" -->
+					<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;display: inline-block;">
 
-				<!--<div class="col-sm-2">
-					<a href="{{ article.url }}">
-						<div  class="btn btn-primary align-middle">
-							Lire l'article
-						</div>
-					</a>
-				</div>-->
-			</div>
-		{% endif %}{% endfor %}
+						<a href="{{ article.url }}">
+							<h4 style="margin-top: 10px;margin-bottom: 5px;">
+								{{ article.title }}
+							</h4>
+						</a>
+
+						<br>
+						<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
+							{{ article.intro }}
+						</a>
+
+						<!--<div class="col-sm-2">
+							<a href="{{ article.url }}">
+								<div  class="btn btn-primary align-middle">
+									Lire l'article
+								</div>
+							</a>
+						</div>-->
+					</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	</div>
 </div>
