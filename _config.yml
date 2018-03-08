@@ -2,6 +2,8 @@ name: NH test
 markdown: kramdown
 #permalink: /:title
 
+soi: soi
+
 # Social
 # if you don't have any of social below, comment the line.
 email: nathalie.houpert@gmail.com
