@@ -5,7 +5,9 @@ intro: Des articles pour améliorer ses relations aux autres et à soi. Un artic
 intro_large: Passionnée par les sciences humaines, ma vision recoupe des notions et outils issus du développement personnel, du coaching professionnel, et des méthodes d'organisation en entreprise
 ---
 
-
+{% for tag in site.data.tags %}
+{{tag}}
+{% endfor %}
 <div class="row">
 	<div class="card-columns">
 
