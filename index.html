@@ -11,7 +11,7 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 			{% assign t = tag | first %}
 		  	{% assign articles = tag | last %}
 			{{ t | downcase }}
-		<h1>{{t}}{{page.t}} {{tag}} {{articles}}</h1>
+		<h1>coucou {{t}} {{page.t}} {{tag}} {{articles}}</h1>
 
 		{% for article in site.pages %}{% if article.layout=="article" %}
 		<!--class="col-md-4" -->
