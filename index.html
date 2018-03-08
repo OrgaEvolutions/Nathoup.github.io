@@ -10,6 +10,8 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 		{% for tag in site.tags %}
 			{% assign t = tag | first %}
 		  	{% assign articles = tag | last %}
+			{{ t | downcase }}
+
 
 		{% for article in site.pages %}{% if article.layout=="article" %}
 		<!--class="col-md-4" -->
