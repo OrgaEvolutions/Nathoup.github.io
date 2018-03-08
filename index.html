@@ -11,7 +11,7 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 	<div class="card-columns">
 		{% for tag in site.data.tags %}
 			<h3>{{tag.libelle}}
-			{% for article in site.pages %}{% if article.layout=="article" %}
+			{% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
 			<!--class="col-md-4" -->
 				<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;display: inline-block;">
 
