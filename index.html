@@ -5,24 +5,9 @@ intro: Des articles pour améliorer ses relations aux autres et à soi. Un artic
 intro_large: Passionnée par les sciences humaines, ma vision recoupe des notions et outils issus du développement personnel, du coaching professionnel, et des méthodes d'organisation en entreprise
 ---
 
-<div class="row">
-	<ul class="tags">
-		{% for tag in site.tags %}
-		  {% assign t = tag | first %}
-		  {% assign posts = tag | last %}
-		  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
-		{% endfor %}
-		</ul>
 
-</div>
 <div class="row">
 	<div class="card-columns">
-		<h1>hey</h1>
-		{% for tag in site.tags %}
-			{% assign t = tag | first %}
-		  	{% assign articles = tag | last %}
-			{{ t | downcase }}
-		<h1>coucou {{t}} {{page.t}} {{tag}} {{articles}}</h1>
 
 		{% for article in site.pages %}{% if article.layout=="article" %}
 		<!--class="col-md-4" -->
@@ -48,6 +33,5 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 				</div>-->
 			</div>
 		{% endif %}{% endfor %}
-		{% endfor %}
 	</div>
 </div>
