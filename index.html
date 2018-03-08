@@ -5,8 +5,6 @@ intro: Des articles pour améliorer ses relations aux autres et à soi. Un artic
 intro_large: Passionnée par les sciences humaines, ma vision recoupe des notions et outils issus du développement personnel, du coaching professionnel, et des méthodes d'organisation en entreprise
 ---
 
-
-
 <div class="row">
 	<div class="card-columns">
 		{% for tag in site.data.tags %}
@@ -14,16 +12,16 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 				<h3>{{tag.libelle}}</h3>
 				{% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
 				<!--class="col-md-4" -->
-					<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;display: inline-block;">
+					<div style="border-bottom: 1px solid #eee;padding-bottom: 20px;padding-top: 10px;display: inline-block;line-height:0.9">
 
 						<a href="{{ article.url }}">
-							<h4 style="margin-top: 10px;margin-bottom: 5px;">
+							<h5>
 								{{ article.title }}
-							</h4>
+							</h5
 						</a>
 
 						<br>
-						<a href="{{ article.url }}" style= "text-decoration: none;color: gray;">
+						<a href="{{ article.url }}" style= "text-decoration: none;color: gray;font-size:0.9rem">
 							{{ article.intro }}
 						</a>
 
