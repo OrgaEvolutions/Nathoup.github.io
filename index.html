@@ -7,6 +7,7 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 
 <div class="row">
 	<div class="card-columns">
+		{% for tag in site.tags %}
 		{% for article in site.pages %}{% if article.layout=="article" %}
 		<!--class="col-md-4" -->
 			<div style="border-bottom: 1px solid #eee;padding-bottom: 30px;padding-top: 30px;display: inline-block;">
@@ -31,5 +32,6 @@ intro_large: Passionnée par les sciences humaines, ma vision recoupe des notion
 				</div>-->
 			</div>
 		{% endif %}{% endfor %}
+		{% endfor %}
 	</div>
 </div>
