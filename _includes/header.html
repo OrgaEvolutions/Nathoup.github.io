@@ -16,23 +16,25 @@
                   Articles
                  </a>
                   
-                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarTag">
+                 <ul class="dropdown-menu show" aria-labelledby="navbarTag">
                         {% for tag in site.data.tags %}
-                             <li class="nav-item dropright">
+                             <li class="show">
                   
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarArticles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarArticles">
                                           {{tag.libelle}}
                                     </a>
                                    
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarArticles">
+                                    <ul class="dropdown-menu show" aria-labelledby="navbarArticles">
                                           {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
-
-                                                <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
+                                                <li>
+                                                      <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
+                                                </li>
                                           {% endif %}{% endfor %}
-                                   </div>
+                                          
+                                   </ul>
                               </li>
                        {% endfor %}
-                  </div>
+                  </ul>
             </li>
                 
             <li class="nav-item">
