@@ -10,8 +10,20 @@
             <li class="nav-item">
               <a class="nav-link" href={% link index.html %}>Accueil</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href={% link index.html %}>Articles</a>
+            <li class="nav-item dropdown">
+                  
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Articles
+                 </a>
+                  
+                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        {% for tag in site.data.tags %}
+                              {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
+
+                                    <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
+                              {% endif %}{% endfor %}
+                       {% endfor %}
+                  </div>
             </li>
                 
             <li class="nav-item">
