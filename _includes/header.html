@@ -16,15 +16,15 @@
                   Articles
                  </a>
                   
-                 <ul class="dropdown-menu show" aria-labelledby="navbarTag">
+                 <ul class="dropdown-menu" aria-labelledby="navbarTag">
                         {% for tag in site.data.tags %}
-                             <li class="show">
+                             <li class="">
                   
                                     <a class="dropdown-item dropdown-toggle" href="#" id="navbarArticles">
                                           {{tag.libelle}}
                                     </a>
                                    
-                                    <ul class="dropdown-menu show" aria-labelledby="navbarArticles">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarArticles">
                                           {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
                                                 <li>
                                                       <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
