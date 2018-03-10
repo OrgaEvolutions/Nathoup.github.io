@@ -20,11 +20,11 @@
                         {% for tag in site.data.tags %}
                              <li class="">
                   
-                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarArticles">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
                                           {{tag.libelle}}
                                     </a>
                                    
-                                    <ul class="dropdown-menu" aria-labelledby="navbarArticles">
+                                    <ul class="dropdown-menu">
                                           {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
                                                 <li>
                                                       <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
