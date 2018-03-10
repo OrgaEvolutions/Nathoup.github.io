@@ -12,16 +12,25 @@
             </li>
             <li class="nav-item dropdown">
                   
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarTag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Articles
                  </a>
                   
-                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarTag">
                         {% for tag in site.data.tags %}
-                              {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
+                             <li class="nav-item dropright">
+                  
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarArticles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          {{tag.libelle}}
+                                    </a>
+                                   
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarArticles">
+                                          {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
 
-                                    <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
-                              {% endif %}{% endfor %}
+                                                <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
+                                          {% endif %}{% endfor %}
+                                   </div>
+                              </li>
                        {% endfor %}
                   </div>
             </li>
