@@ -11,7 +11,7 @@
    - id: besoins
 - id: objectif_vie
   recos:
-   - id: personnalité
+   - id: personnalite
    - id: prochaine_action
 - id: personnalite
   recos:
