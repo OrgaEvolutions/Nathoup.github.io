@@ -2,3 +2,25 @@
   recos:
    - id: prise_parole
    - id: guide_interieur
+- id: effort_relation
+  recos:
+   - id: besoins
+   - id: personnalite
+- id: guide_interieur
+  recos:
+   - id: besoins
+- id: objectif_vie
+  recos:
+   - id: personnalité
+   - id: prochaine_action
+- id: personnalite
+  recos:
+   - id: objectif_vie
+   - id: guide_interieur
+- id: prise_parole
+  recos:
+   - id: besoins
+   - id: effort_relation
+- id: prochaine_action
+  recos:
+   - id: personnalite
