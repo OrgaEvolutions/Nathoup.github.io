@@ -1,2 +1,4 @@
-id,recos
-besoins,[prise_parole,guide_interieur]
+- id: besoins
+  recos:
+   -prise_parole
+   -guide_interieur
