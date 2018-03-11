@@ -10,10 +10,12 @@ layout: default
        
      <div class = "col-md-offset-1 col-md-3">
 	   <p><div class="bg-light">
-	     Articles liés
+	     <b>Articles liés</b>
 	     {% for reco in site.data.recos_articles | where: reco.id==page.id %}
 			{% for article_reco in reco.recos %}
-	     			1{{article_reco.id}}1<br>
+	     			{% for page in site.pages | where: page.id==article_reco.id %}
+	     				<a href={{page.url}}>{{page.title}}</a>
+	     			{% endfor %}
 	     		{% endfor %}
 	     {% endfor %}
            </div></p>
