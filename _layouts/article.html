@@ -14,7 +14,7 @@ layout: default
 	     {% for reco in site.data.recos_articles %}
 		{% if reco.id==page.id %}
 			{% for article_reco in reco.recos %}
-	     			{{article_reco}}<br>
+	     			0{{article_reco}}0<br>
 	     		{% endfor %}
 	     	{% endif%}
 	     {% endfor %}
