@@ -17,7 +17,7 @@
 
                              <ul class="dropdown-menu" aria-labelledby="navbarTag">
                                     {% for tag in site.data.tags %}
-                                         <li class="">
+                                         <!--<li class="">
                                                 <a class="dropdown-item dropdown-toggle" href="#">
                                                       {{tag.libelle}}
                                                 </a>
@@ -26,6 +26,21 @@
                                                       {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
                                                             <li>
                                                                   <a class="dropdown-item" href={{ article.url }}>{{ article.title }}</a>
+                                                            </li>
+                                                      {% endif %}{% endfor %}
+
+                                               </ul>
+                                          </li>-->
+                                   
+                                          <li class="">
+                                                <a data-toggle="collapse" href="#collapse{{tag.name}}" aria-expanded="false">
+                                                      {{tag.libelle}}
+                                                </a>
+
+                                                <ul class="collapse" id="collapse{{tag.name}}">
+                                                      {% for article in site.pages %}{% if article.layout=="article" and article.tags contains tag.name %}
+                                                            <li>
+                                                                  <a class="" href={{ article.url }}>{{ article.title }}</a>
                                                             </li>
                                                       {% endif %}{% endfor %}
 
