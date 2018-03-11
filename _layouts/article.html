@@ -9,6 +9,13 @@ layout: default
        </div>
        
      <div class = "col-md-offset-1 col-md-3">
+	   <p><div class="bg-light">
+	     Articles liés
+	     {% for reco in site.data.recos_articles %}{% if reco.article_ini==page.url %}
+	     	{{reco.articles_reco}}
+	     {% endif%}{% endfor %}
+           </div></p>
+	     
            <p><div class="bg-light">
             <div class="row"><div class="col-12"><b>me contacter</b></div></div>
              <div class="row"><div class="col-12">
