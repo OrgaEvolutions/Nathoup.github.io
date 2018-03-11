@@ -12,10 +12,10 @@ layout: default
 	   <p><div class="bg-light">
 	     Articles liés
 	     {% for reco in site.data.recos_articles %}
-	     {{reco.id}}
-	     {{page.id}}
+	      reco id {{reco.id}}
+	     page id {{page.id}}
 	     {% if reco.id==page.id %}
-	     	{{reco.recos}}
+	     	recos {{reco.recos}}
 	     {% endif%}{% endfor %}
            </div></p>
 	     
