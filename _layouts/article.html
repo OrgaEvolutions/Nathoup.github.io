@@ -13,7 +13,7 @@ layout: default
 	     Articles liés
 	     {% for reco in site.data.recos_articles %}
 		{% if reco.id==page.id %}
-			{% for article_reco in page.recos}
+			{% for article_reco in reco.recos %}
 	     			{{article_reco}}<br>
 	     		{% endfor %}
 	     	{% endif%}
