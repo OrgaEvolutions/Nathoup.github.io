@@ -10,7 +10,7 @@ layout: default
        
      <div class = "col-md-offset-1 col-md-3">
 	   <p><div class="bg-light">
-	     <b>Articles liés</b>
+	     <b>Articles liés</b><br>
 	     {% for reco in site.data.recos_articles | where: "id",page.id %}
 	     reco_id: {{reco.id}}<br>
 			{% for article_reco in reco.recos %}
