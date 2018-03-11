@@ -1,4 +1,4 @@
 - id: besoins
   recos:
-   prise_parole
-   guide_interieur
+   - prise_parole
+   - guide_interieur
