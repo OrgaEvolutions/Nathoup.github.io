@@ -12,8 +12,11 @@ layout: default
 	   <p><div class="bg-light">
 	     <b>Articles liés</b>
 	     {% for reco in site.data.recos_articles | where: "id",page.id %}
+	     reco_id: {{reco.id}}<br>
 			{% for article_reco in reco.recos %}
+	     			article_reco: {{article_reco.id}}<br>
 	     			{% for page in site.pages | where: "id",article_reco.id %}
+	     				page_id: {{page.id}}<br>
 	     				<a href={{page.url}}>{{page.title}}</a>
 	     			{% endfor %}
 	     		{% endfor %}
