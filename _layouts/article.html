@@ -11,7 +11,10 @@ layout: default
      <div class = "col-md-offset-1 col-md-3">
 	   <p><div class="bg-light">
 	     Articles liés
-	     {% for reco in site.data.recos_articles %}{% if reco.article_ini==page.url %}
+	     {% for reco in site.data.recos_articles %}
+	     {{reco.article_ini}}
+	     {{page.url}}
+	     {% if reco.article_ini==page.url %}
 	     	{{reco.articles_reco}}
 	     {% endif%}{% endfor %}
            </div></p>
