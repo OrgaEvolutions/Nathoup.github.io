@@ -11,12 +11,10 @@ layout: default
      <div class = "col-md-offset-1 col-md-3">
 	   <p><div class="bg-light">
 	     Articles liés
-	     {% for reco in site.data.recos_articles %}
-		{% if reco.id==page.id %}
+	     {% for reco in site.data.recos_articles | where reco.id==page.id %}
 			{% for article_reco in reco.recos %}
 	     			0{{article_reco}}0<br>
 	     		{% endfor %}
-	     	{% endif%}
 	     {% endfor %}
            </div></p>
 	     
