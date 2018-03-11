@@ -14,7 +14,7 @@ layout: default
 	     {% for reco in site.data.recos_articles %}{% if reco.id==page.id %}
 			{% for article_reco in reco.recos %}
 	     			{% for page in site.pages %}{% if page.id==article_reco.id %}
-	     				<a href={{page.url}}>{{page.title}}</a><br>
+	     				<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
 	     			{% endif %}{% endfor %}
 	     		{% endfor %}
 	     {% endif %}{% endfor %}
