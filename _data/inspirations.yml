@@ -10,8 +10,8 @@
    - element: "Communication Non Violente"
    - element: "Isabelle Filliozat"
    
- - categorie: Entreprise
-   liste:
+- categorie: Entreprise
+  liste:
    - element: "Agilité, Lean Startup, Lean"
    - element: "Entreprise libérée, Holacracy"
    - element: "Alain Cardon, Vincent Lenhardt"
