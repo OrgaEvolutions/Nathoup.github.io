@@ -64,7 +64,7 @@ intro: Voici les courants, modèles, auteurs, qui m'ont le plus fait avancer dan
   </table>
 
 <div class="row">
-  <div class="column-6">
+  <div class="column-sm-6">
     <div class="row"><div class="column"><b>Catégorie</b></div></div>
     {% for categ in site.data.inspirations %}
       <div class="row"><div class="column">
@@ -73,7 +73,7 @@ intro: Voici les courants, modèles, auteurs, qui m'ont le plus fait avancer dan
     {% endfor %}
   </div>
   
-  <div class="column-6">
+  <div class="column-sm-6">
     <div class="row"><div class="column"><b>Modèles, courants, auteurs</b></div></div>
     {% for categ in site.data.inspirations %}
       <div class="row"><div class="column">
@@ -86,20 +86,20 @@ intro: Voici les courants, modèles, auteurs, qui m'ont le plus fait avancer dan
 </div>
 
 <div class="row">
-  <div class="column-6">
+  <div class="column-sm-6">
     <b>Catégorie</b>
   </div>
   
-  <div class="column-6">
+  <div class="column-sm-6">
     <b>Modèles, courants, auteurs</b>
   </div>
 </div>
 {% for categ in site.data.inspirations %}
   <div class="row">
-    <div class="column-6">
+    <div class="column-sm-6">
   {{categ.categorie}}
   </div>
-    <div class="column-6">
+    <div class="column-sm-6">
       {% for elem in categ.liste %}
         {{elem.element}}<br>
       {% endfor %}
