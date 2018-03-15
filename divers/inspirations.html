@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Inspirations et influences
-intro: Voici les courants et modèles, qui m'ont fait avancer dans ma vision des choses, et auxquels je continue à me référer.
+intro: Voici les courants, modèles, auteurs, qui m'ont le plus fait avancer dans ma vision des choses, et auxquels je continue à me référer.
 ---
 
 
@@ -62,3 +62,12 @@ intro: Voici les courants et modèles, qui m'ont fait avancer dans ma vision des
       <!--<td>Reinventing Organizations, Frédéric Laloux</td>-->
     </tr>
   </table>
+
+<div class="row">
+  <div class="column">
+    <b>Catégorie</b>
+    {% for categ in site.data.inspirations %}
+      {{categ.categorie}}
+    {% endfor %}
+  </div>
+</div>
