@@ -3,11 +3,13 @@
    - element: L'élément humain
    - element: Process com
    - element: Spirale dynamique
+   
 - categorie: Sciences humaines générales
   liste:
    - element: Systémique
    - element: Communication Non Violente
    - element: Isabelle Filliozat
+   
  - categorie: Entreprise
    liste:
    - element: Agilité, Lean Startup, Lean
