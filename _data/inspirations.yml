@@ -1,17 +1,17 @@
 - categorie: "Modèles comportements humains"
   liste:
-   - element: L'élément humain
-   - element: Process com
-   - element: Spirale dynamique
+   - element: "L'élément humain"
+   - element: "Process com"
+   - element: "Spirale dynamique"
    
-- categorie: Sciences humaines générales
+- categorie: "Sciences humaines générales"
   liste:
-   - element: Systémique
-   - element: Communication Non Violente
-   - element: Isabelle Filliozat
+   - element: "Systémique"
+   - element: "Communication Non Violente"
+   - element: "Isabelle Filliozat"
    
  - categorie: Entreprise
    liste:
-   - element: Agilité, Lean Startup, Lean
-   - element: Entreprise libérée, Holacracy
-   - element: Alain Cardon, Vincent Lenhardt
+   - element: "Agilité, Lean Startup, Lean"
+   - element: "Entreprise libérée, Holacracy"
+   - element: "Alain Cardon, Vincent Lenhardt"
