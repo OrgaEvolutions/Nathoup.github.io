@@ -84,3 +84,25 @@ intro: Voici les courants, modèles, auteurs, qui m'ont le plus fait avancer dan
      {% endfor %}
   </div>
 </div>
+
+<div class="row">
+  <div class="column-6">
+    <b>Catégorie</b>
+  </div>
+  
+  <div class="column-6">
+    <b>Modèles, courants, auteurs</b>
+  </div>
+</div>
+{% for categ in site.data.inspirations %}
+  <div class="row">
+    <div class="column-6">
+  {{categ.categorie}}
+  </div>
+    <div class="column-6">
+      {% for elem in categ.liste %}
+        {{elem.element}}<br>
+      {% endfor %}
+    </div>
+</div>
+{% endfor %}
