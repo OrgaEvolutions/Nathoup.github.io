@@ -64,23 +64,23 @@ intro: Voici les courants, modèles, auteurs, qui m'ont le plus fait avancer dan
   </table>
 
 <div class="row">
-  <div class="column">
-    <b>Catégorie</b>
+  <div class="column-6">
+    <div class="row"><div class="column"><b>Catégorie</b></div></div>
+    {% for categ in site.data.inspirations %}
+      <div class="row"><div class="column">
+          {{categ.categorie}}
+      </div></div>
+    {% endfor %}
   </div>
   
-  <div class="column">
-    <b>Modèles, courants, auteurs</b>
+  <div class="column-6">
+    <div class="row"><div class="column"><b>Modèles, courants, auteurs</b></div></div>
+    {% for categ in site.data.inspirations %}
+      <div class="row"><div class="column">
+        {% for elem in categ.liste %}
+            {{elem.element}}<br>
+        {% endfor %}
+      </div></div>
+     {% endfor %}
   </div>
 </div>
-{% for categ in site.data.inspirations %}
-  <div class="row">
-    <div class="column">
-  {{categ.categorie}}
-  </div>
-    <div class="column">
-      {% for elem in categ.liste %}
-        {{elem.element}}<br>
-      {% endfor %}
-    </div>
-</div>
-{% endfor %}
