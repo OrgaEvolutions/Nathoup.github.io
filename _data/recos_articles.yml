@@ -17,10 +17,14 @@
   recos:
    - id: objectif_vie
    - id: guide_interieur
+   - id: axes_changer
 - id: prise_parole
   recos:
    - id: besoins
    - id: effort_relation
 - id: prochaine_action
+  recos:
+   - id: personnalite
+- id: axes_changer
   recos:
    - id: personnalite
