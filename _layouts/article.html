@@ -27,7 +27,7 @@ layout: default
 	    {% for page in site.pages %}{% if page.layout=="article" and counter < 4 %}
 	     	<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
 	    	{% assign counter=counter | plus:1 %}
-	    {% endfor %}
+	    {% endif %}{% endfor %}
            </div></p>
 	     
            <p><div class="bg-light">
