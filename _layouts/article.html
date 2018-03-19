@@ -19,6 +19,15 @@ layout: default
 	     		{% endfor %}
 	     {% endif %}{% endfor %}
            </div></p>
+	    
+	   
+	   <p><div class="bg-light">
+	     <b>Articles récents</b><br>
+	    {% for page in site.pages limit:3 %}
+	     	<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
+	     	{% endif %}{% endfor %}
+	    {% endfor %}
+           </div></p>
 	     
            <p><div class="bg-light">
             <div class="row"><div class="col-12"><b>me contacter</b></div></div>
