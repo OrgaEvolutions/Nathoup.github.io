@@ -6,6 +6,9 @@
 
   {% when 'passage_important' %}
       <div style="border-left: thick solid #ff0000;margin-left : 50px;padding: 15px; font-weight: bold;margin-bottom: 15px">
+      <!--
+      border: outset blue;padding: 5px; font-weight: bold;margin-bottom: 15px;font-size:1.2em
+      -->
 
   {% when 'fin_passage_important' %}
     </div>
