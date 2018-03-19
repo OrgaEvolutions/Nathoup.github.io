@@ -23,7 +23,7 @@ layout: default
 	   
 	   <p><div class="bg-light">
 	     <b>Articles récents</b><br>
-	    {% for page in site.pages limit:3 %}
+	    {% for page in site.pages limit:3 | where page.id==article_reco.id %}
 	     	<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
 	     	{% endif %}{% endfor %}
 	    {% endfor %}
