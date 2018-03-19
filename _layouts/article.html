@@ -23,9 +23,9 @@ layout: default
 	   
 	   <p><div class="bg-light">
 	     <b>Articles récents</b><br>
-	    {% for page in site.pages %}{% if page.layout=="article" %}
+	    {% for page in site.pages | where page.layout=="article" %}
 	     	<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
-	    {% endif %}{% endfor %}
+	    {% endfor %}
            </div></p>
 	     
            <p><div class="bg-light">
