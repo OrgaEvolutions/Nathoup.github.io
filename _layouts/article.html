@@ -27,8 +27,7 @@ layout: default
 	    {% for page in site.pages %}{% if page.id==article_reco.id and counter<4 %}
     		{% capture counter %}{{ counter | plus:'1' }}{% endcapture %}
 	     	<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
-	     	{% endif %}{% endfor %}
-	    {% endfor %}
+	    {% endif %}{% endfor %}
            </div></p>
 	     
            <p><div class="bg-light">
