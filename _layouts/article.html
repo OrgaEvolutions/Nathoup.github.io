@@ -8,66 +8,59 @@ layout: default
         {{ content }}
        </div>
        
-     <div class = "col-md-offset-1 col-md-3">
-	   {% capture articles_lies_content %}
-	     {% for reco in site.data.recos_articles %}{% if reco.id==page.id %}
-			{% for article_reco in reco.recos %}
-	     			{% for page in site.pages %}{% if page.id==article_reco.id %}
-	     				<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
-	     			{% endif %}{% endfor %}
-	     		{% endfor %}
-	     {% endif %}{% endfor %}
-	   {% endcapture %}
-	     
-	   {% capture articles_recents_content %}
-	    {% assign counter = 0 %}
-	    {% for page in site.pages %}{% if page.layout=="article" and counter < 3 %}
-	     	<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
-	    	{% assign counter=counter | plus:1 %}
-	    {% endif %}{% endfor %}
-	   {% endcapture %}
+	     <div class = "col-md-offset-1 col-md-3">
+		   {% capture articles_lies_content %}
+		     {% for reco in site.data.recos_articles %}{% if reco.id==page.id %}
+				{% for article_reco in reco.recos %}
+					{% for page in site.pages %}{% if page.id==article_reco.id %}
+						<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
+					{% endif %}{% endfor %}
+				{% endfor %}
+		     {% endif %}{% endfor %}
+		   {% endcapture %}
 
-	   {% capture contact_content %}
-	    <h6>un commentaire, une question, une suggestion?</h6>
-               <form action="https://formspree.io/nathalie.houpert@gmail.com" method="POST">
-                 <div class="form-group"><textarea name=Message rows=5 class="form-control" ></textarea></div>
-                <button type=submit><i class="fa fa-1x fa-envelope-square"></i> Envoyer</button>
-              </form> 
-	   {% endcapture %}
-	    
-	   {% capture partage_content %}
-	    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
-            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
-	   {% endcapture %}
-	    
-	   {% include article_div title='Articles liés' content=articles_lies_content %} 
-	   {% include article_div title='Articles récents' content=articles_recents_content %}
-	   {% include article_div title='me contacter' content=contact_content %}
-	   {% include article_div title="partager l'article" content=partage_content %} 
-          
-           <p><div class="bg-light">
-            <div class="row"><div class="col"><b>suivre les nouveautés</b></div></div>
-             <div class="row">
-               <div class="col-md-12">
-		                       
-                 
-                 <div id="mc_embed_signup">
+		   {% capture articles_recents_content %}
+		    {% assign counter = 0 %}
+		    {% for page in site.pages %}{% if page.layout=="article" and counter < 3 %}
+			<a href={{page.url}} style="font-size:0.8em;">{{page.title}}</a><br>
+			{% assign counter=counter | plus:1 %}
+		    {% endif %}{% endfor %}
+		   {% endcapture %}
+
+		   {% capture contact_content %}
+		    <h6>un commentaire, une question, une suggestion?</h6>
+		       <form action="https://formspree.io/nathalie.houpert@gmail.com" method="POST">
+			 <div class="form-group"><textarea name=Message rows=5 class="form-control" ></textarea></div>
+			<button type=submit><i class="fa fa-1x fa-envelope-square"></i> Envoyer</button>
+		      </form> 
+		   {% endcapture %}
+
+		   {% capture partage_content %}
+		    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
+		    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+		   {% endcapture %}
+
+		   {% capture nouveautes_content %}
+			<div id="mc_embed_signup">
 			<form action="https://github.us17.list-manage.com/subscribe/post?u=c92282615c03ee7c88805781b&amp;id=42c312e904" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
-				    
-                 		<div class="form-group"><input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email" required></div>
-			    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			     	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c92282615c03ee7c88805781b_42c312e904" tabindex="-1" value=""></div>
+
+				<div class="form-group"><input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email" required></div>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c92282615c03ee7c88805781b_42c312e904" tabindex="-1" value=""></div>
 				    <button type="submit" name="subscribe" id="mc-embedded-subscribe">S'abonner à la newsletter</button>
 			    </div>
 			</form>
 		  </div>
-			 
-                 
-		     </div>
-	 </div></div>
-	 </p>
-    
+		   {% endcapture %}
+
+		   {% include article_div title='Articles liés' content=articles_lies_content %} 
+		   {% include article_div title='Articles récents' content=articles_recents_content %}
+		   {% include article_div title='me contacter' content=contact_content %}
+		   {% include article_div title="partager l'article" content=partage_content %} 
+		   {% include article_div title="suivre les nouveautés" content=nouveautes_content %} 
+
+
         </div>
     </div>
 </article>
