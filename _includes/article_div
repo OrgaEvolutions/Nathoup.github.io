@@ -1,5 +1,4 @@
-<p><div style="border-radius: 15px;background-color:azure;padding:10px;">
-<!-- lightskyblue -->
+<p><div style="border-radius: 15px;background-color:lightskyblue;padding:10px;">
 <b>{{include.title}}</b><br>
 {{include.content}}
 </div></p>
