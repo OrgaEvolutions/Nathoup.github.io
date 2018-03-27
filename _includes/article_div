@@ -1,0 +1,4 @@
+<p><div class="bg-light">
+<b>{{include.title}}</b><br>
+{{include.content}}
+</div></p>
