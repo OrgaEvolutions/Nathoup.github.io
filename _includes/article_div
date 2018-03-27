@@ -1,4 +1,4 @@
-<p><div class="bg-light">
+<p><div class="border-radius: 15px;background-color:lightblue;padding:10px;">
 <b>{{include.title}}</b><br>
 {{include.content}}
 </div></p>
