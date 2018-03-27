@@ -19,10 +19,6 @@ layout: default
 	     {% endif %}{% endfor %}
 	   {% endcapture %}
 	     
-	   {% include article_div title='Articles liés' content=articles_lies_content %}
-	    
-	   
-	     
 	   {% capture articles_recents_content %}
 	    {% assign counter = 0 %}
 	    {% for page in site.pages %}{% if page.layout=="article" and counter < 3 %}
@@ -30,11 +26,7 @@ layout: default
 	    	{% assign counter=counter | plus:1 %}
 	    {% endif %}{% endfor %}
 	   {% endcapture %}
-	     
-	   {% include article_div title='Articles récents' content=articles_recents_content %}
-	     
 
-	     
 	   {% capture contact_content %}
 	    <h6>un commentaire, une question, une suggestion?</h6>
                <form action="https://formspree.io/nathalie.houpert@gmail.com" method="POST">
@@ -42,17 +34,17 @@ layout: default
                 <button type=submit><i class="fa fa-1x fa-envelope-square"></i> Envoyer</button>
               </form> 
 	   {% endcapture %}
-	     
+	    
+	   {% include article_div title='Articles liés' content=articles_lies_content %} 
+	   {% include article_div title='Articles récents' content=articles_recents_content %}
 	   {% include article_div title='me contacter' content=contact_content %}
 	
 	
-           <p><div class="bg-light">
-            <div class="row"><div class="col"><b>partager l'article</b></div></div>
-             <div class="row">
-              <div class="col-md-6"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></div>
-              <div class="col-md-6"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></div>
-             </div>
-           </div></p>   
+	   {% include article_div title='partager l'article' content='
+
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+		' %} 
           
            <p><div class="bg-light">
             <div class="row"><div class="col"><b>suivre les nouveautés</b></div></div>
