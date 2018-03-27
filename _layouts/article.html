@@ -35,16 +35,15 @@ layout: default
               </form> 
 	   {% endcapture %}
 	    
+	   {% capture partage_content %}
+	    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+	   {% endcapture %}
+	    
 	   {% include article_div title='Articles liés' content=articles_lies_content %} 
 	   {% include article_div title='Articles récents' content=articles_recents_content %}
 	   {% include article_div title='me contacter' content=contact_content %}
-	
-	
-	   {% include article_div title='partager l'article' content='
-
-              <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
-              <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" title="LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
-		' %} 
+	   {% include article_div title='partager l'article' content=partage_content %} 
           
            <p><div class="bg-light">
             <div class="row"><div class="col"><b>suivre les nouveautés</b></div></div>
