@@ -5,10 +5,10 @@
     </p>
 
   {% when 'passage_important' %}
-      <div style="border-left: thick solid #ff0000;margin-left : 50px;padding: 15px; font-weight: bold;margin-bottom: 15px">
-      <!--
-      border: outset blue;padding: 5px; font-weight: bold;margin-bottom: 15px;font-size:1.2em
-      -->
+      <div style="font-weight: bold;margin-bottom: 15px;font-size:1.1em;border-left: solid thick red;padding-left:15px;">
+      
+      <!--<div style="border-left: thick solid #ff0000;margin-left : 50px;padding: 15px; font-weight: bold;margin-bottom: 15px">-->
+     
 
   {% when 'fin_passage_important' %}
     </div>
