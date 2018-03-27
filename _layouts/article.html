@@ -9,8 +9,7 @@ layout: default
        </div>
        
      <div class = "col-md-offset-1 col-md-3">
-	   <p><div class="bg-light">
-	     <b>Articles liés</b><br>
+	   {% capture articles_lies_content %}
 	     {% for reco in site.data.recos_articles %}{% if reco.id==page.id %}
 			{% for article_reco in reco.recos %}
 	     			{% for page in site.pages %}{% if page.id==article_reco.id %}
@@ -18,7 +17,9 @@ layout: default
 	     			{% endif %}{% endfor %}
 	     		{% endfor %}
 	     {% endif %}{% endfor %}
-           </div></p>
+	   {% endcapture %}
+	     
+	   {% include article_div title='Articles liés' content=articles_lies_content %}
 	    
 	   
 	   <p><div class="bg-light">
